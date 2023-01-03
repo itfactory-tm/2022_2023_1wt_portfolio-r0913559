@@ -1,0 +1,76 @@
+body[id="home"]{
+    background-color: #c1c3b5;
+    background-image: url("https://cdn.discordapp.com/attachments/1008571204854100000/1059803675570217040/wimpiefury_a_hipster_cycling_event_webpage_layout__liquor_flask_3ce886dd-830e-41db-bc9f-0d11d5676124.png");
+    background-position: ;
+    background-size: cover;
+}
+body[id="events"]{
+
+}
+body[id="pictures"]{
+
+}
+body[id="donquichot"]{
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    max-width:100px;
+    size: auto;
+}
+.noback{
+    background-image: none;
+}
+.gallery {
+    background-color: #c1c3b5;
+    background-image: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-gap: 0.5em;*/
+}
+
+.gallery img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+nav ul{
+    list-style:none;
+    margin: 0;
+    padding:0;
+    display: flex;
+}
+nav li{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0 1em;
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color:0.2s;
+}
+nav a:hover,
+nav a:active{
+    color: black;
+}
+nav a:active{
+    font-weight: bold;
+}
