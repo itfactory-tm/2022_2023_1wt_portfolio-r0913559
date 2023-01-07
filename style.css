@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: white;
     color: black;
+    min-height: 100%;
+    overflow-x: hidden;
+
 }
 /* backup font family */
 body {
@@ -14,12 +17,21 @@ body, html{
     margin: 0;
 }
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #111;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 .logo img{
     height:50px;
     width: auto;
@@ -108,6 +120,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #060501;
+    padding-top: 150px;
 }
 
 .hero-section img {
@@ -153,7 +166,7 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 0;
 }
 
 h2 {
@@ -162,6 +175,7 @@ h2 {
 }
 
 .event {
+    padding-top: 35px;
     margin-bottom: 40px;
 }
 
@@ -195,6 +209,7 @@ footer {
     padding: 20px;
     background-color: #111;
     color: white;
+    margin-bottom: 0;
 }
 
 .contact-info {
@@ -271,12 +286,13 @@ footer {
 .faq a:hover {
     color: #ffa500;
 }
- body[id=error]{
-     background-color: black;
-     color: white;
- }
+
 
  /*404 error page*/
+body[id=error]{
+    background-color: black;
+    color: white;
+}
 
 .error-image {
     display: flex;
