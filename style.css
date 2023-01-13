@@ -6,19 +6,23 @@ body {
     color: black;
     min-height: 100%;
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
 }
 
-body, html{
+
+body, html {
     height: 100%;
     margin: 0;
 }
 
-main[id=eventpage]{
-    background: url("./pictures/event_50.jpg") center/cover no-repeat;
-    position: relative;
-    min-height: 100%;
-    margin-top: 125px;
-}
+/*!*main[id=eventpage]{*/
+/*    background: url("./pictures/event_50.jpg") center/cover no-repeat;*/
+/*    position: relative;*/
+/*    min-height: 100%;*/
+/*    margin-top: 125px;*/
+/*}*!*/
 
 header {
     position: fixed;
@@ -33,58 +37,71 @@ header {
     background-color: #111;
     width: 100%;
 }
-.front{
+
+.front {
     margin-top: 20px;
 }
-@media only screen and (max-width: 935px) and ( min-width: 350px){
+
+@media only screen and (max-width: 935px) and ( min-width: 350px) {
     .logo img {
         width: 100px;
         height: auto;
     }
-     /*Hide the nav items by default */
+
+    /*Hide the nav items by default */
     nav {
         display: none;
     }
-     /*Show the logo and nav items when the screen is smaller than 768px */
+
+    /*Show the logo and nav items when the screen is smaller than 768px */
     .logo, nav {
         display: block;
     }
-     /*Place the nav items below the logo */
+
+    /*Place the nav items below the logo */
     nav {
         margin-top: 10px;
     }
-     /*Make the nav items full width and vertically aligned */
+
+    /*Make the nav items full width and vertically aligned */
     nav ul {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-     /*Remove the horizontal spacing between nav items */
+
+    /*Remove the horizontal spacing between nav items */
     nav li {
         width: 100%;
         margin: 0;
     }
+
     .hero-content h1 {
         font-size: 32px;
     }
+
     .hero-content .button {
         font-size: 14px;
     }
+
     .footer-items {
         flex-direction: column;
     }
+
     table {
         display: block;
         width: 100%;
         overflow-x: scroll;
     }
+
     tr {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0.5em 0;
     }
+
     td {
         display: flex;
         flex: 1;
@@ -93,14 +110,17 @@ header {
         flex-direction: column;
         border: none;
     }
+
     td:first-child {
         width: 100%;
     }
+
     td img {
         width: 80%;
         max-width: 200px;
     }
-    .faq{
+
+    .faq {
         text-align: left;
     }
 }
@@ -172,7 +192,7 @@ nav a:hover {
     font-weight: bold;
     margin-bottom: 20px;
     max-width: 700px;
-    left:33%;
+    left: 33%;
     top: 33%;
     position: absolute;
     top: 50%;
@@ -200,15 +220,18 @@ nav a:hover {
 }
 
 main {
+    flex-grow: 1;
+
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    margin-top: 125px;
-    margin-bottom: auto;
-    padding: 10px;
-    min-height: max-content;
     justify-content: left;
     flex-direction: column;
+    position: relative;
+    margin-top: 125px;
+    /*margin-bottom: auto;*/
+    /*padding: 10px;*/
+    padding: 10px;
+    /*min-height: max-content;*/
 }
 
 h2 {
@@ -216,11 +239,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-.event {
-    padding-top: 35px;
-    margin-bottom: 40px;
-    min-height: 100%;
-}
+/*.event {*/
+/*    padding-top: 35px;*/
+/*    margin-bottom: 40px;*/
+/*    min-height: 100%;*/
+/*}*/
 
 .event h3 {
     font-size: 24px;
@@ -268,18 +291,16 @@ td img {
 }
 
 footer {
+    background-color: #111;
     display: flex;
     flex-wrap: wrap;
-    position: sticky;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-    color: white;
-    margin-bottom: 0;
-    height: fit-content;
-    overflow: hidden;
-    padding: 10px;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   margin-bottom: 0;
+   /*height: fit-content;
+   overflow: hidden;*/
+   padding: 10px;
 }
 
 .contact-info {
@@ -291,7 +312,7 @@ footer {
     margin-right: 20px;
 }
 
-.socials{
+.socials {
     display: flex;
     align-items: center;
 }
@@ -335,9 +356,10 @@ footer {
 .newsletter-form input [type="submit"]:hover {
     background-color: #ffb31a;
 }
+
 .faq {
     margin-top: 20px;
-    padding-right:30px;
+    padding-right: 30px;
     text-align: right;
 }
 
@@ -360,8 +382,8 @@ footer {
 }
 
 
- /*404 error page*/
-body[id=error]{
+/*404 error page*/
+body[id=error] {
     background-color: black;
     color: white;
 }
@@ -397,7 +419,7 @@ body[id=error]{
     font-size: 18px;
 }
 
-@media print{
+@media print {
     section, main, body, figure, footer {
         height: unset;
         overflow: unset;
@@ -409,9 +431,10 @@ body[id=error]{
         color: black;
         text-align: left;
     }
+
     div {
-        padding: 0 ;
-        margin: 0 ;
+        padding: 0;
+        margin: 0;
     }
 }
 
