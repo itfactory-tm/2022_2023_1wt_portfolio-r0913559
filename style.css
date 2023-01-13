@@ -17,15 +17,11 @@ main[id=eventpage]{
     background: url("./pictures/event_50.jpg") center/cover no-repeat;
     position: relative;
     min-height: 100%;
-
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*flex-direction: column;*/
-    /*display: flex;*/
+    margin-top: 125px;
 }
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -37,12 +33,10 @@ header {
     background-color: #111;
     width: 100%;
 }
-.logo img{
-    height:50px;
-    width: auto;
+.front{
+    margin-top: 20px;
 }
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and ( min-width: 350px){
     .logo img {
         width: 100px;
         height: auto;
@@ -106,6 +100,9 @@ header {
         width: 80%;
         max-width: 200px;
     }
+    .faq{
+        text-align: left;
+    }
 }
 
 .logo img {
@@ -137,6 +134,7 @@ nav a:hover {
 
 .hero-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -147,7 +145,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #060501;
-    padding-top: 10px;
+    margin-top: 125px;
 }
 
 .hero-section img {
@@ -170,15 +168,21 @@ nav a:hover {
 }
 
 .hero-content h1 {
-    /*position: relative;*/
-    /*display: flex;*/
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     max-width: 700px;
-    justify-content: center;
-
+    left:33%;
+    top: 33%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-bottom: 20px;
 }
+
+/*.hero-content button{}*/
 
 .button {
     display: inline-block;
@@ -196,9 +200,17 @@ nav a:hover {
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    padding-top: 10px;
+    margin-top: 125px;
+    /*margin-bottom: 20px;*/
     padding: 10px;
+    min-height: max-content;
+    /*align-items: left;*/
+    justify-content: left;
+    flex-direction: column;
+    position: relative;
 }
 
 h2 {
@@ -209,6 +221,7 @@ h2 {
 .event {
     padding-top: 35px;
     margin-bottom: 40px;
+    min-height: 100%;
 }
 
 .event h3 {
@@ -241,12 +254,6 @@ table {
     border: none;
 }
 
-/*th,*/
-/*td {*/
-/*    border: 1px solid #333;*/
-/*    padding: 0.5em;*/
-/*}*/
-
 th {
     text-align: left;
     background-color: #333;
@@ -255,29 +262,26 @@ th {
 
 td {
     vertical-align: top;
-
 }
 
 td img {
     height: autopx;
     width: 100%;
-
 }
 
 footer {
     display: flex;
     position: absolute;
     width: 100%;
-    /*position: absolute;*/
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: #111;
     color: white;
     margin-bottom: 0;
     height: fit-content;
     overflow: hidden;
-    padding:10px;
+    padding: 20px;
+    /*margin-top: 125px;*/
 }
 
 .contact-info {
@@ -335,7 +339,7 @@ footer {
 }
 .faq {
     margin-top: 20px;
-    padding-right: 20px;
+    padding-right:30px;
     text-align: right;
 }
 
