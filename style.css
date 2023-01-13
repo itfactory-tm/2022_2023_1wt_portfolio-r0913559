@@ -1,10 +1,5 @@
-/* backup font family */
 body {
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
-}
-
-body {
-    font-family: sans-serif;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -46,32 +41,32 @@ header {
     height:50px;
     width: auto;
 }
-/* logo image smaller on small screens */
+
 @media (max-width: 768px) {
     .logo img {
         width: 100px;
         height: auto;
     }
-    /* Hide the nav items by default */
+     /*Hide the nav items by default */
     nav {
         display: none;
     }
-    /* Show the logo and nav items when the screen is smaller than 768px */
+     /*Show the logo and nav items when the screen is smaller than 768px */
     .logo, nav {
         display: block;
     }
-    /* Place the nav items below the logo */
+     /*Place the nav items below the logo */
     nav {
         margin-top: 10px;
     }
-    /* Make the nav items full width and vertically aligned */
+     /*Make the nav items full width and vertically aligned */
     nav ul {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    /* Remove the horizontal spacing between nav items */
+     /*Remove the horizontal spacing between nav items */
     nav li {
         width: 100%;
         margin: 0;
@@ -113,8 +108,6 @@ header {
     }
 }
 
-
-
 .logo img {
     width: 100px;
     height: auto;
@@ -128,9 +121,8 @@ nav ul {
 }
 /*!! Still need changes spo the navbar doesnt cut screen on the right side*/
 nav li {
-    margin: 0 25px;
-    padding-right: 10px;
-    /*width: auto;*/
+    margin: 0 10px;
+    padding-right: 20px;
 }
 
 nav a {
@@ -173,16 +165,19 @@ nav a:hover {
     /*places element in center of het parent element by horizontal 50% own width en vert 50% of own height.*!*/
     transform: translate(-50%, -50%);
     text-align: center;
+    padding: 10px;
     color: white;
 }
 
 .hero-content h1 {
-    position: center;
+    /*position: relative;*/
+    /*display: flex;*/
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     max-width: 700px;
-    text-align: justify-all;
+    justify-content: center;
+
 }
 
 .button {
@@ -204,6 +199,7 @@ main {
     position: relative;
     padding: 0;
     padding-top: 10px;
+    padding:10px;
 }
 
 h2 {
@@ -282,6 +278,7 @@ footer {
     margin-bottom: 0;
     height: fit-content;
     overflow: hidden;
+    padding:10px;
 }
 
 .contact-info {
@@ -316,7 +313,7 @@ footer {
 
 .newsletter-form input[type="email"] {
     width: 250px;
-    height: 40px;
+    height: 52px;
     padding: 0 10px;
     border: none;
     border-radius: 4px;
@@ -340,6 +337,7 @@ footer {
 .faq {
     margin-top: 20px;
     padding-right: 20px;
+    text-align: right;
 }
 
 .faq h4 {
