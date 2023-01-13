@@ -36,7 +36,7 @@ header {
 .front{
     margin-top: 20px;
 }
-@media only screen and (max-width: 768px) and ( min-width: 350px){
+@media only screen and (max-width: 935px) and ( min-width: 350px){
     .logo img {
         width: 100px;
         height: auto;
@@ -204,13 +204,11 @@ main {
     flex-wrap: wrap;
     position: relative;
     margin-top: 125px;
-    /*margin-bottom: 20px;*/
+    margin-bottom: auto;
     padding: 10px;
     min-height: max-content;
-    /*align-items: left;*/
     justify-content: left;
     flex-direction: column;
-    position: relative;
 }
 
 h2 {
@@ -271,7 +269,8 @@ td img {
 
 footer {
     display: flex;
-    position: absolute;
+    flex-wrap: wrap;
+    position: sticky;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -280,8 +279,7 @@ footer {
     margin-bottom: 0;
     height: fit-content;
     overflow: hidden;
-    padding: 20px;
-    /*margin-top: 125px;*/
+    padding: 10px;
 }
 
 .contact-info {
@@ -397,5 +395,23 @@ body[id=error]{
 
 .error-message p {
     font-size: 18px;
+}
+
+@media print{
+    section, main, body, figure, footer {
+        height: unset;
+        overflow: unset;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin: 1rem;
+        padding: 0;
+        color: black;
+        text-align: left;
+    }
+    div {
+        padding: 0 ;
+        margin: 0 ;
+    }
 }
 
