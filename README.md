@@ -8,10 +8,10 @@
 
 | Student         | Info                                                             |
 |:----------------|:-----------------------------------------------------------------|
-| Name            | ...                                                              |
+| Name            | Heyns Wim                                                              |
 | email           | [r0913559@student.thomasmore.be](mailto:0913559@student.thomasmore.be)    |
-| Github Username | ...                                                              |
-| Hosting         | [https://yourdomain.netlify.app](https://yourdomain.netlify.app) |
+| Github Username | r0913559                                                              |
+| Hosting         | https://fury-cycling-adventures.netlify.app/
 
 ## Installatie
 
