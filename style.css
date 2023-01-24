@@ -298,7 +298,7 @@ td img {
 }
 
 .custom-marker li::before {
-    content: "🚴‍♂️";
+    content: "🚴‍♂️";    /* U+1F6B4 U+200D U+2642 U+FE0F*/
     padding-right: 10px;
 }
 
