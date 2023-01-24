@@ -11,7 +11,7 @@
 | Name            | Heyns Wim                                                              |
 | email           | [r0913559@student.thomasmore.be](mailto:0913559@student.thomasmore.be)    |
 | Github Username | r0913559                                                              |
-| Hosting         | https://fury-cycling-adventures.netlify.app/
+| Hosting         | [https://fury-cycling-adventures.netlify.app/ ](https://fury-cycling-adventures.netlify.app/) |
 
 ## Installatie
 
